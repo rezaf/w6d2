@@ -1,0 +1,147 @@
+/* General items */
+html, body, header, nav, ul, li, div, h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
+  font-family: sans-serif;
+  
+}
+
+.fixed-width {
+  min-width: 750px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* HEADER */
+header {
+  background-color: red;
+  border-bottom: 3px solid black;
+  height: 50px;
+  color: white;
+}
+
+header > div {
+  border-right: 3px solid black;
+  border-left: 3px solid black;
+  position: relative;
+  height: 50px;
+}
+
+header nav {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+nav ul, nav ul li {
+  height: 50px;
+  padding: 0;
+  line-height: 47px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 0 20px;
+}
+
+header nav ul li {
+  border-left: 3px solid black;
+}
+
+header nav ul li:hover {
+  background: #333;
+}
+
+#notifications:hover {
+  background: #333;
+}
+
+#notification-num {
+  width: 1.6em;
+  height: 1.6em;
+  line-height: 1.7em;
+  display: inline-block;
+  background-color: #333;
+  border-radius: 0.8em;
+  -moz-border-radius: 0.8em;
+  -webkit-border-radius: 0.8em;
+  text-align: center;
+  margin-right: 5px;
+}
+
+header nav ul li:hover > #notification-num {
+  background-color: red;
+}
+
+header h4 {
+  line-height: 47px;
+  padding: 0 20px;
+}
+
+
+/* MAIN CONTENT */
+
+main {
+  background: white;
+  border-right: 3px solid lightgrey;
+  border-bottom: 3px solid lightgrey;
+  border-left: 3px solid lightgrey;
+}
+
+#stuff {
+  padding: 20px;
+}
+
+aside {
+  display: inline-block;
+  width: 220px;
+  border-right: 3px solid lightgrey;
+  padding-right: 25px;
+}
+
+article {
+  display: inline-block;
+  width: 620px;
+  vertical-align: top;
+  padding-left: 35px;
+}
+
+/* FOOTER */
+
+footer {
+  border-top: 3px solid lightgrey;
+  background-color: #ddd;
+  color: grey;
+}
+
+footer > div {
+  position: relative;
+  height: 60px;
+}
+
+footer nav {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+footer h5 {
+  line-height: 57px;
+  padding: 0 20px;
+}
+
+footer nav ul, footer nav ul li {
+  height: 60px;
+  line-height: 57px;
+}
