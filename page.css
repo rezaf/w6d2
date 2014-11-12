@@ -63,8 +63,8 @@ header nav ul li:hover {
   background: #333;
 }
 
-#notifications:hover {
-  background: #333;
+#notifications:hover > ul * {
+  visibility: visible;
 }
 
 #notification-num {
@@ -87,6 +87,34 @@ header nav ul li:hover > #notification-num {
 header h4 {
   line-height: 47px;
   padding: 0 20px;
+}
+
+
+/* Drop down menu */
+
+#drop-down {
+  padding: 0;
+  position: absolute;
+  top: 48px;
+  left: 85px;
+  width: 350px;
+  visibility: hidden;
+/*  -transition: opacity 0.2s;
+*/}
+
+#notifications li {
+    background: #fff;
+    display: block;
+    color: black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+/*    color: #fff;*/
+    /*position: relative;*/
+}
+
+#notifications li:hover{
+  background: #bbb;
 }
 
 
